@@ -27,7 +27,7 @@ def my_pow(b, e) -> float:
 
     return result
 
-
+print("hi")
 print(my_pow(10, -2))
 print(my_pow(2, 9))
 print(my_pow(16, 0.5))
