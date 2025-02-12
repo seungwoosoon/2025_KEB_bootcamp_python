@@ -23,7 +23,7 @@ def my_pow(b, e) -> float:
     for _ in range(i):  # for k in range(e):
         result = result * b
 
-    # float value process
+    # float value
     if f > 0:
         result = result * math.exp(f * math.log(b))
 
