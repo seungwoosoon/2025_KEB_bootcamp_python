@@ -10,18 +10,20 @@ def my_pow(b, e) -> float:
     :param e: exponent
     :return: the power result in the form of a real number
     """
-    if e < 0:
+    if e < 0:  # minus value
         b = 1 / b
         e = e * -1
 
     result = 1
 
-    i = int(e)
+    # partitioning
+    i = int(e) 
     f = e - i
 
     for _ in range(i):  # for k in range(e):
         result = result * b
 
+    # float value process
     if f > 0:
         result = result * math.exp(f * math.log(b))
 
